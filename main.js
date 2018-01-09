@@ -55,14 +55,14 @@ document.getElementById("DeleteContactBt").onclick = function(){DeleteContacts()
 
 function DeleteContacts(){
     console.log("Click");
-    location.href = "DeleteContacts.html";
+    location.href = "deletecontacts.html";
 }
 
 document.getElementById("EditContactBt").onclick = function(){EditContacts()};
 
 function EditContacts(){
     console.log("Click");
-    location.href = "EditContacts.html";
+    location.href = "editcontacts.html";
 }
 
 
