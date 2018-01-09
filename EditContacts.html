@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ryan's Contact App</title>
+    <link rel = "stylesheet" href = "styleEditPage.css">
+    <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+</head>
+    <body>
+        <div class="container"><!--The class can also be named anything and it is also used to style in css-->
+            <h1 class="brand"><span>Contact</span> Manager</h1>
+                <div class="contact animated bounceInLeft">
+                    <h3>Contact Details</h3>
+                    <p>
+                        <button type="submit" id="HomeBt">Go Home</button>
+                    </p>
+                    
+            <div class="BottomContainer  animated bounceInRight">
+                <h4>Select details to edit:</h4>
+                <p>
+                    <ol id="ContactList" name="reset" onclick = EditDelete()><!--Calls function in editor.js-->
+
+                    </ol>
+
+                    <div id="contactForm">
+
+                        <h1>Update Contact Details</h1>
+                        <small>Please enter all the details:</small>
+                        
+                        <form action="/index.html">
+                            <input placeholder="Name" type="text" id="NewName" required />
+                            <input placeholder="Surname" type="text" id="NewSurname" required />
+                            <input placeholder="Email" type="email" id="NewEmail" required />
+                            <input placeholder="Cell" type"text" id="NewCell" required />
+                            <button id = "popupSubmit" type="submit" location = "index.html">Submit</button>
+                        </form>
+                    </div>
+                </p>
+            </div>
+        </div> 
+        <!--Make sure that the script is above the edit.js-->
+        <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.js"
+                integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+                crossorigin="anonymous"></script>    
+    <script src="edit.js"></script> 
+    </body>
+</html>

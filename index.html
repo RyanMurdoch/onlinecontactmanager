@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ryan's Contact App</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+</head>
+    <body>
+        <div class="container"><!--The class can also be named anything and it is also used to style in css-->
+            <h1 class="brand"><span>Contact</span> Manager</h1>
+                <div class="contact animated bounceInRight">
+                    <h3>Add Contact Details</h3>
+                    <p class="EditDeleteGroup">
+                        <button type="submit" id="DeleteContactBt">Delete Contacts</button>
+                        <button type="submit" id="EditContactBt">Edit Contacts</button>
+                    </p>
+                    
+                    <div class = "SuccessAlert">Contact Save Success</div>
+                    
+                        <form id="ContactForm"><!--id is the identifier to be used in code, it can be named what you want-->
+                            <p>
+                                <label>Name:</label>
+                                <input type="text" name = "Name" id="Name" required> <!--required will be validating that there should be a proper input-->
+                            </p>
+                            <p>
+                                <label>Surname:</label>
+                                <input type="text" name = "Surname" id="Surname" required>
+
+                            </p>
+                            <p>
+                                <label>Email:</label>
+                                <input type="email" name = "Email" id="Email" required>
+                            </p>
+                            <p>
+                                <label>Cell No:</label>
+                                <input type="text" name = "Cell" id="CellNo" required>
+                            </p>
+                            <p class="full">
+                                <button type="submit">Save</button>
+                            </p>
+                        </form>
+            </div>
+            <div class="BottomContainer  animated bounceInLeft">
+                <h3>Contact View</h3>
+                <p>
+                    <ol id="ContactList" name="reset">
+
+                    </ol>
+                </p>
+            </div>
+        </div> 
+        <!--Make sure that the script is above the main.js-->
+        <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>    
+    <script src="main.js"></script> 
+    </body>
+</html> 

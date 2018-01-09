@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: #92bae7;
+    color: #485e74;
+    line-height: 1.5;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 1em;
+}
+
+.container{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+ol li:hover{
+    background-color: #fd9f9f;
+    padding: 5px;
+    margin-left: 35px;
+    margin: 5px 10px;
+    text-shadow: #79c879;
+    cursor: pointer;
+}
+
+.brand{
+    text-align: center;
+
+}
+.brand span{
+    color: rgb(216, 241, 230);
+}
+.contact{
+    box-shadow: 0px 5px 20px 5px rgba(72,94,116,0.7);
+}
+.contact > *{
+    padding: 1em;
+}/*Everything inside the wrapper has padding*/
+
+.contact{
+    background: #a9caec;
+}
+
+/*Form styles for the form tag*/
+
+.contact form{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*1 fractional*/
+    grid-gap: 2px;
+}
+
+.contact form label{
+    display: block;
+}/*Make sure it's displayed as a block*/
+
+.contact form p{
+    margin: 3px;
+}/*Paragraph margin zero*/
+
+.contact form .full{
+    grid-column: 1/3; 
+}
+
+.contact form button, .contact form input, .contact form textarea{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #c9e6ff;
+}
+.contact form button{
+    background: #7bb1e7;
+    border: 0;
+    text-transform: uppercase;
+}
+.contact form button:hover,.contact form button:focus{
+    background: #92bde7;
+    color: #fff;
+    outline: 0;
+    transition: background-color 2s ease-out;
+}
+
+.SuccessAlert{
+    text-align: center;
+    padding: 10px;
+    background: #79c879;
+    color: #fff;
+    margin-bottom: 10px;
+    display: none;
+
+}
+
+.contact button{
+    width: 50%;
+    padding: 5px;
+    border: 1px solid #c9e6ff;
+    background: #7bb1e7;
+    border: 0;
+    text-transform: uppercase;
+}
+
+.contact button:hover, .contact button:focus{
+    background: #92bde7;
+    color: #fff;
+    outline: 0;
+    transition: background-color 2s ease-out;
+}
+
+@import "https://fonts.googleapis.com/css?family=Raleway";
+
+#contact { 
+  margin: 4em auto;
+  width: 100px; 
+  height: 30px; 
+  line-height: 30px;
+  background: teal;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+#contact:hover { background: #666; }
+#contact:active { background: #444; }
+
+#contactForm { 
+  display: none;
+
+  border: 6px solid rgb(7, 136, 223); 
+  padding: 2em;
+  width: 400px;
+  text-align: center;
+  background: rgb(147, 194, 238);
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%)
+  
+}
+
+
+.formBtn { 
+  width: 140px;
+  display: inline-block;
+  
+  background: rgb(26, 158, 182);
+  color: rgb(209, 241, 253);
+  font-weight: 100;
+  font-size: 1.2em;
+  border: none;
+  height: 30px;
+}
