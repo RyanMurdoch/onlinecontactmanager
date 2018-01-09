@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ryan's Contact App</title>
+    <link rel = "stylesheet" href = "styledeletepage.css">
+    <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+</head>
+    <body>
+        <div class="container"><!--The class can also be named anything and it is also used to style in css-->
+            <h1 class="brand"><span>Contact</span> Manager</h1>
+                <div class="contact animated bounceInLeft">
+                    <h3>Contact Details</h3>
+                    <p>
+                        <button type="submit" id="HomeBt">Go Home</button>
+                    </p>
+                    
+            <div class="BottomContainer  animated bounceInRight">
+                <h4>Select a Contact to Delete:</h4>
+                <p>
+                    <ol id="ContactList" name="reset" onclick = EditDelete()><!--Calls function in editor.js-->
+
+                    </ol>
+                </p>
+
+            </div>
+        </div> 
+        <!--Make sure that the script is above the main.js-->
+        <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.js"
+                integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+                crossorigin="anonymous"></script>    
+    <script src="delete.js"></script> 
+    </body>
+</html>
