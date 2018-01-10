@@ -73,6 +73,11 @@ function EditDelete(){
     $('#ContactList').click(function() {
         $('#contactForm').fadeIn();
     });
+    
+    var keys = Object.keys(globdataset);
+    var k;
+    var i = 0;
+    
     var g = document.getElementById('ContactList');
 
     for (var i = 0, len = g.children.length; i < len; i++)
@@ -80,7 +85,12 @@ function EditDelete(){
         (function(index){
             g.children[i].onclick = function(){
                 ClickedItemNumber = index + 1; 
-                //console.log("Clicked on list number " + ClickedItemNumber + " ID: " + globkeys[ClickedItemNumber-1]);
+                k = keys[ClickedItemNumber-1];
+                console.log(globdataset[k].Name);
+                document.getElementById("NewName").value = globdataset[k].Name;
+                document.getElementById("NewSurname").value = globdataset[k].Surname;
+                document.getElementById("NewEmail").value = globdataset[k].Email;
+                document.getElementById("NewCell").value = globdataset[k].CellNo;
                 document.getElementById("ContactList").style.display = 'block';
             }        
         })(i);
