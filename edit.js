@@ -65,15 +65,6 @@ function EditContacts(){
     console.log("Click");
     location.href = "index.html";
 }
-// Event listener, so listen to form submissions
-document.getElementById("popupSubmit").onclick = function(){SubmitButtonPress()};
-
-//Function to go to home after clicking the "Go Home" button
-function SubmitButtonPress(){
-    console.log("Click");
-    location.href = "index.html";
-}
-
 
 //Function to check which element in the ordered list was clicked
 function EditDelete(){
@@ -122,10 +113,6 @@ function SubmitContact(){
         firebase.database().ref("ContactDetails/" + globkeys[ClickedItemNumber-1]).update({ Email: NewEmail });
         firebase.database().ref("ContactDetails/" + globkeys[ClickedItemNumber-1]).update({ CellNo: NewCell });
         
-    }
-    if((document.getElementById("NewName").value != "") && (document.getElementById("NewSurname").value != "") && (document.getElementById("NewEmail").value != "") && (document.getElementById("NewCell").value != ""))
-    {
-        location.href = "index.html";
     }
 }
 
